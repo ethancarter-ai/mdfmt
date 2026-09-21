@@ -2,6 +2,12 @@
 
 Normalize Markdown files from the command line — fix indentation, spacing, heading hierarchy, list alignment, and blank-line consistency. One command, zero runtime dependencies.
 
+## Author
+
+- **Name:** Manya chandra
+- **GitHub:** https://github.com/Manyachandra
+- **Email:** 132090383+Manyachandra@users.noreply.github.com
+
 ## About
 
 Markdown is easy to write but easy to get messy: inconsistent indentation, mixed tabs and spaces, headings that skip levels, unordered lists that switch between `*`, `-`, and `+`, and erratic blank lines around blocks. `mdfmt` applies a consistent, opinionated style to any Markdown file or stream.
@@ -20,23 +26,36 @@ It is designed for editors, documentation pipelines, and pre-commit hooks — no
 - **In-place and stdout modes** — `-i` for files, pipe-friendly for stdin
 - **Zero runtime dependencies** — stdlib only: `argparse`, `re`, `sys`
 
-## Installation
+## Tech Stack
+
+| Component | Details |
+|-----------|---------|
+| Language | Python 3.11+ |
+| Dependencies | None (stdlib only) |
+| Packaging | `pyproject.toml` with setuptools |
+| Testing | `pytest` |
+| Linting | `ruff` |
+| Layout | Flat single-module (`mdfmt.py`) |
+
+## Project Structure
+
+```
+mdfmt/
+├── mdfmt.py           # Main module (flat single-module layout)
+├── pyproject.toml     # Packaging and metadata
+├── README.md          # This file
+├── .gitignore
+└── tests/
+    └── test_mdfmt.py  # pytest suite
+```
+
+## Getting Started
+
+### Install
 
 ```bash
 pip install mdfmt
 ```
-
-Or from source:
-
-```bash
-git clone <repo-url>
-cd mdfmt
-pip install -e .
-```
-
-Requires Python 3.11+.
-
-## Usage
 
 ### Format a file (stdout)
 
@@ -89,26 +108,7 @@ mdfmt --help
 - It does not touch HTML blocks, definition lists, or table cell alignment beyond basic trimming.
 - It does not parse Markdown into a full AST; it works line-by-line with conservative context.
 
-## Project structure
-
-```
-mdfmt/
-├── mdfmt.py           # Main module (flat single-module layout)
-├── pyproject.toml     # Packaging and metadata
-├── README.md          # This file
-├── .gitignore
-└── tests/
-    └── test_mdfmt.py  # pytest suite
-```
-
-## Tech Stack
-
-- Python 3.11+ (stdlib only — no external runtime dependencies)
-- `pyproject.toml` with setuptools
-- `pytest` + `ruff` for development
-- Flat single-module layout (`mdfmt.py`)
-
-## Tags / keywords
+## Topics
 
 `markdown`, `formatter`, `cli`, `beautifier`, `docs`, `lint`, `python`, `stdlib`, `text-processing`
 
