@@ -4,9 +4,9 @@ Normalize Markdown files from the command line — fix indentation, spacing, hea
 
 ## Author
 
-- **Name:** Manya chandra
-- **GitHub:** https://github.com/Manyachandra
-- **Email:** 132090383+Manyachandra@users.noreply.github.com
+- **Name:** Ethan Carter
+- **GitHub:** https://github.com/ethancarter-ai
+- **Email:** 291844740+ethancarter-ai@users.noreply.github.com
 
 ## About
 
