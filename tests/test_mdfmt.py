@@ -11,8 +11,8 @@ if str(ProjectRoot) not in sys.path:
     sys.path.insert(0, str(ProjectRoot))
 
 import pytest  # noqa: E402
-import mdfmt  # noqa: E402
 
+import mdfmt  # noqa: E402
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -251,8 +251,7 @@ def test_main_help_returns_0():
 
 def test_main_no_args_stdin_mode():
     """empty argv → stdin mode; pytest blocks sys.stdin.read(), so we
-    exercise the fallback branch instead and assert nonzero ret."""
-    import io
+    exercise the fallback branch instead and assert exit 0."""
     code = mdfmt.main([], stdin="")
     assert code == 0
 
