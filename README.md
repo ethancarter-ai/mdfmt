@@ -2,6 +2,12 @@
 
 Normalize Markdown files from the command line — fix indentation, spacing, heading hierarchy, list alignment, and blank-line consistency. One command, zero runtime dependencies.
 
+## About this repo
+
+- **Repository:** [ethancarter-ai/mdfmt](https://github.com/ethancarter-ai/mdfmt)
+- **Author:** Ethan Carter — [GitHub](https://github.com/ethancarter-ai)
+- **Email:** 291844740+ethancarter-ai@users.noreply.github.com
+
 ## Author
 
 - **Name:** Ethan Carter
